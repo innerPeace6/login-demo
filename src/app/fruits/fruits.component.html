@@ -1,0 +1,25 @@
+<h2>PRODUCT CONFIGURATION</h2>
+
+<div class="config">
+<div class="fruitList" >
+<ul class="fruits">    
+  <li *ngFor="let fruit of fruits" (click)="onSelect(fruit)"  [class.selected]="fruit === selectedFruit">
+    <span class="fix">{{fruit.id}}</span> 
+    <span>{{fruit.name}}</span>
+    
+  </li>
+</ul>
+</div>
+
+<div *ngIf="selectedFruit"  class="details">
+<h2>{{selectedFruit.name | uppercase}} Details</h2>
+<div><span>fruit id: </span>{{selectedFruit.id}}</div>
+<div><span>fruit name: </span>
+  <label><input [(ngModel)]="selectedFruit.name" placeholder="name"></label> 
+</div>
+<div><span>fruit price: </span>
+  <label><input [(ngModel)]="selectedFruit.price" placeholder="price"></label> 
+</div>
+</div>
+</div>
+
