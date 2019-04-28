@@ -14,6 +14,11 @@ export class LoginComponent implements OnInit {
   constructor(private myHS: HttpService) { }
 
   ngOnInit() {
+    
+  }
+
+  login(){
+    
     //如果result.uname中有数据，说明已登录，把用户名读取到头部，如果没有说明未登录
     if (this.username == 'admin' && this.password == '123456') {
       this.isLogin = true;
