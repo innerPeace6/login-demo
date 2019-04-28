@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { HttpService } from './../http.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,18 +12,23 @@ export class LoginComponent implements OnInit {
   uname: string = '';
   username;
   password;
-  constructor(private myHS: HttpService) { }
+  constructor(
+    private myHS: HttpService,
+    private router: Router
+    ) { }
 
   ngOnInit() {
     
   }
 
   login(){
-    
+
     //如果result.uname中有数据，说明已登录，把用户名读取到头部，如果没有说明未登录
     if (this.username == 'admin' && this.password == '123456') {
       this.isLogin = true;
       this.uname = this.username;
+      //跳转到列表页
+      this.router.navigateByUrl("/list");
     }
   }
 }

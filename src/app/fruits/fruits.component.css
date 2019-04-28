@@ -77,3 +77,40 @@ color: white;
     position: relative;
     top: -3px;
   } */
+
+  .row1 {
+    grid-area: list;
+  }
+  
+  .row2 {
+    grid-area: detail;
+  }
+  
+  .row3 {
+    grid-area: quickStart;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'list detail  quickStart';
+    grid-gap: 10px;
+    background-color: #f4f6f700 !important;
+    padding: 10px;
+    grid-template-columns: 30% 40% 30%;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    -ms-layout-grid-line: 5px;
+    
+   
+  }
+  
+  .grid-container>div {
+    background-color: #f4f6f7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    
+  }
+  
