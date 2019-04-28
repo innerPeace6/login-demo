@@ -1,8 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    PRODUCT CONFIGURATION
   </h1>
 </div>
-<app-fruits></app-fruits>
 
+
+<section class="grid-container">
+  <div class="row1"> <app-fruits [(ngModel)]="selectedFruit"></app-fruits> </div>
+  <div class=row2> <app-fruit-detail [fruit]="selectedFruit"> </app-fruit-detail> </div>
+  <div class=row3><app-quick-start> </app-quick-start></div>
+  </section> 
