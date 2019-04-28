@@ -13,7 +13,7 @@ import { getNumberOfCurrencyDigits } from '@angular/common';
 
 export class FruitDetailComponent implements OnInit {
 
-  fruit: Fruit[];
+  fruit: Fruit;
   constructor(
     private route: ActivatedRoute,
     private fruitService: FruitService
