@@ -1,31 +1,38 @@
-.login-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #555;
+ul{
+  list-style: none;
 }
-
-.login-wrapper .login-content {
+.login-content {
+  position: auto;
   margin: 100px auto;
   padding-top: 40px;
   width: 400px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.5);
+  height:  245px;
+  background: #f5f3f4bd !important ;
 }
 
-.login-wrapper .login-content table {
-  margin: 0 auto;
+.login-content  span {
+ 
+  padding-left: 12px;
+
+}
+ .login-content  input {
+ 
+  width: 234px;
+  height: 34px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-left-width: 3px;
+  margin-left: 6px;
+  margin-top: 20px;
+
 }
 
-.login-wrapper .login-content table tr {
-  height: 50px;
-  line-height: 50px;
-}
-
-.login-wrapper .login-content table tr button {
-  width: 180px;
+.login-content button {
+  float: right;
+  margin-right: 69px;
+  margin-top: 30px;
+  border-radius: 2px;
+  width: 76px;
   height: 30px;
   cursor: pointer;
 }

@@ -73,17 +73,14 @@ color: white;
     margin-left: 135px;
 }
 
-/* .heroes .text {
-    position: relative;
-    top: -3px;
-  } */
+
 
   .row1 {
     grid-area: list;
   }
   
   .row2 {
-    grid-area: uickStart;
+    grid-area: quickStart;
   }
   
 
@@ -103,7 +100,7 @@ color: white;
    
   }
   
-  .grid-container>div {
+  .grid-container > div {
     background-color: #f4f6f7;
     text-align: center;
     padding: 20px 0;

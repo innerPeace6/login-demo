@@ -1,6 +1,15 @@
+<ul>
 <li *ngIf=!isLogin>
-<div>
-  <input [(ngModel)]="username" placeholder="账号" type="text">
-  <input [(ngModel)]="password" placeholder="密码" type="password">
-  <button (click)="login()">登录</button>
-</div>>
+ 
+    <div class=login-content>
+      <div>
+        <span>用户名: </span><input [(ngModel)]="username" placeholder="account" type="text">
+      </div>
+      <div>
+        <span>密码: </span><input [(ngModel)]="password" placeholder="password" type="password" style= "margin-left: 26px">
+      </div>
+      <button (click)="login()">登录</button>
+    </div>
+  
+</li>
+</ul>
