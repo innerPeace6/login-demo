@@ -4,15 +4,15 @@
     <table>
       <tr>
         <td>用户名: </td>
-        <td><input type="text" name="uname" placeholder="name"></td>
+        <td><input type="text" name="username" placeholder="name" id="uname"></td>
       </tr>
       <tr>
         <td>密码: </td>
-        <td><input type="text" name="password"></td>
+        <td><input type="text" name="password" id="passw"></td>
       </tr>
       <tr>
         <td></td>
-        <td><button (click)="login(uname,password)">登录</button></td>
+        <td><button (click)="login(username,password)">登录</button></td>
       </tr>
     </table>
   </div>
@@ -23,5 +23,5 @@
   <a routerLink ="['/detail']" >
   </a>
 </li>
-<router-outlet>
+<router-outlet></router-outlet>>
 

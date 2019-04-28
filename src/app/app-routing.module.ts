@@ -1,14 +1,15 @@
 import { LoginComponent } from './login/login.component';
-import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
-import { FruitsComponent } from './fruits/fruits.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 // import { HttpService } from './http.service';
 
 
+
 const routes: Routes = [
-  { path: '', component: LoginComponent, pathMatch: "full" },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/login',pathMatch:'prefix' },
   { path: 'detail/:id', component: FruitDetailComponent },
   { path: '/detail', redirectTo: '/detail/:11' },
 

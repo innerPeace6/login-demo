@@ -10,19 +10,18 @@ import { Observable,of, from } from 'rxjs';
   providedIn: 'root'
 })
 export class FruitService {
-  FruitArray :Fruit[]=[];
-  getFruits(): Observable<Fruit[]> {
+  getFruits(id?: any): Observable<Fruit[]> {
     return of(FRUITS);
   }
-  getFruit(id: number): Fruit {
+  // getFruit(id: number): Fruit {
    
-    this.FruitArray=FRUITS;
-    for(var i=0; i<this.FruitArray.length; i++) {
-     if(this.FruitArray[i].id===id) {return this.FruitArray[i];}
-     else{alert("This fruit is not in the system yet")}
-    }
+  //   this.FruitArray=FRUITS;
+  //   for(var i=0; i<this.FruitArray.length; i++) {
+  //    if(this.FruitArray[i].id===id) {return this.FruitArray[i];}
+  //    else{alert("This fruit is not in the system yet")}
+  //   }
     
-  }
+  // }
  
  
   constructor() { }
