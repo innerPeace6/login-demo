@@ -4,7 +4,7 @@ import { FruitsComponent } from './fruits/fruits.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpService } from './http.service';
+// import { HttpService } from './http.service';
 
 
 const routes: Routes = [
