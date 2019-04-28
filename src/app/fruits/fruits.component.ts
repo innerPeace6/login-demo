@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-fruits',
   templateUrl: './fruits.component.html',
   styleUrls: ['./fruits.component.css']
-}) d
+}) 
 
 export class FruitsComponent implements OnInit {
  fruits : Fruit[];
