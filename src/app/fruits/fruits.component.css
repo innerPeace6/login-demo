@@ -5,12 +5,16 @@ box-align: auto;
 /* width: 500px; */
 height: auto;
 }
-
+.fruitList{
+ float: left;
+  width: 400px !important; 
+  margin-left: 10px;
+}
 .fruits{
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 2px;
-     width: 22em; 
+     width: 400px !important; 
     /* float: left; */
     border: #607D8B 1px
 }
@@ -70,7 +74,9 @@ color: white;
 }
 
 .details{
-    margin-left: 135px;
+    /* margin-left: 135px; */
+    float: right;
+     margin-right: 135px; 
 }
 
 

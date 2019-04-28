@@ -1,14 +1,19 @@
+import { FruitsComponent } from './fruits/fruits.component';
+import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { FruitsComponent } from './fruits/fruits.component';
+
   
 const routes: Routes = [
-  { path: 'list', component: FruitsComponent },
-  { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: '/login',pathMatch:'prefix' },//写在后边
+{ path: 'login', component: LoginComponent },
+
+{
+  path: 'list', component: FruitsComponent},
+// { path: '', redirectTo: '/login', pathMatch: 'prefix' }
 ]
+      
 
 @NgModule({
   declarations: [],

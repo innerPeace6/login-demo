@@ -13,17 +13,18 @@ import { getNumberOfCurrencyDigits } from '@angular/common';
 
 export class FruitDetailComponent implements OnInit {
 
-  fruit: Fruit;
+  @Input() fruit: any;
   constructor(
-    private route: ActivatedRoute,
-    private fruitService: FruitService
-  ) { }
+    // private route: ActivatedRoute,
+    // private fruitService: FruitService
+    
+  ) { console.log(this.fruit, '===FruitDetailComponent===')}
 
   ngOnInit(): void {
-    this.getFruit();
+    // this.getFruit();
   }
-  getFruit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')
-    this.fruitService.getFruits(id).subscribe((fruit: any) => this.fruit = fruit);
-  }
+  // getFruit(): void {
+  //   const id = +this.route.snapshot.paramMap.get('id')
+  //   this.fruitService.getFruits(id).subscribe((fruit: any) => this.fruit = fruit);
+  // }
 }

@@ -2,7 +2,6 @@
 
 <section class="grid-container">
   <div class="row1">
-    <h2>FRUIT LIST</h2>
 
     <div class="fruitList">
       <ul class="fruits">
@@ -16,7 +15,8 @@
     </div>
 
     <div *ngIf="selectedFruit">
-      <app-fruit-detail fruit="selectedFruit"> </app-fruit-detail>
+        
+      <app-fruit-detail [fruit]="selectedFruit"> </app-fruit-detail>
     </div>
   </div>
 

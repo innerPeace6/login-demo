@@ -1,7 +1,7 @@
 
 
-<div *ngIf="fruit" >
-  <h2>{{fruit.name | uppercase}} Details</h2>
+<div *ngIf="fruit" class="detail">
+  <h3>{{fruit.name | uppercase}} Details</h3>
   <div><span>fruit id: </span>{{fruit.id}}</div>
   <div><span>fruit name: </span>
     <label><input [(ngModel)]="fruit.name" placeholder="name"></label> 
@@ -10,4 +10,5 @@
     <label><input [(ngModel)]="fruit.price" placeholder="price"></label> 
   </div>
   <!-- <button (click)="save()">save</button> -->
+ 
   </div>

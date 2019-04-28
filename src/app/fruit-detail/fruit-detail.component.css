@@ -1,4 +1,11 @@
 /* HeroDetailComponent's private CSS styles */
+.detail{
+  width: 420px;
+  float: right;
+  font-size: 19px;
+  margin-right: 141px;
+  margin-top: 20px;
+}
 label {
     display: inline-block;
     width: 3em;

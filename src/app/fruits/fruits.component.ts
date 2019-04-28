@@ -22,6 +22,7 @@ export class FruitsComponent implements OnInit {
   }
   onSelect(fruit:Fruit):void{
     this.selectedFruit= fruit;
+    console.log(this.selectedFruit, '==onSelect=')
     }
     getFruits(){
      this.fruitService.getFruits().subscribe(fruits => this.fruits=fruits);
