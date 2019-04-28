@@ -4,13 +4,18 @@
 <div class="fruitList" >
 <ul class="fruits">    
   <li *ngFor="let fruit of fruits" (click)="onSelect(fruit)"  [class.selected]="fruit === selectedFruit">
-   <a routerLink ="/detail/{{fruit.id}}">
+   <a routerLink ="['/detail/{{fruit.id}}']" routerLinkActive="active">
     <span class="fix">{{fruit.id}}</span> 
     <span>{{fruit.name}}</span>
     </a>
   </li>
 </ul>
 </div>
+<section class="grid-container">
+  
+  <div class=row2>  <router-outlet></router-outlet> </div>
+ 
+  </section> 
 
 <!-- <div *ngIf="selectedFruit"  class="details">
 <h2>{{selectedFruit.name | uppercase}} Details</h2>

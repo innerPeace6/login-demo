@@ -1,4 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<!-- 登录 -->
+
+<div class="container" style="margin-top:50px;">
+
+  <router-outlet></router-outlet>
+
+</div>
 <div style="text-align:center">
   <h1>
     PRODUCT CONFIGURATION
@@ -8,6 +15,6 @@
 
 <section class="grid-container">
   <div class="row1"> <app-fruits [(ngModel)]="selectedFruit"></app-fruits> </div>
-  <div class=row2> <app-fruit-detail [fruit]="selectedFruit"> </app-fruit-detail> </div>
+  <!-- <div class=row2> <app-fruit-detail [fruit]="selectedFruit"> </app-fruit-detail> </div> -->
   <div class=row3><app-quick-start> </app-quick-start></div>
   </section> 

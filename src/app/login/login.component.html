@@ -1,3 +1,27 @@
-<p>
-  login works!
-</p>
+<li *ngIf="!isLogin">
+<div class="login-wrapper">
+  <div class="login-content">
+    <table>
+      <tr>
+        <td>用户名: </td>
+        <td><input type="text" placeholder="name"></td>
+      </tr>
+      <tr>
+        <td>密码: </td>
+        <td><input type="text" name=""></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button (click)="login()">登录</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</li>
+
+<li *ngIf="isLogin">
+  <a routerLink ="['/detail']" >
+  </a>
+</li>
+<router-outlet>
+

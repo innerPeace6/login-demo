@@ -37,7 +37,7 @@ color: white;
     left: .1em
     }
     
-    .heroes a {
+    .fruits a {
         color: #888;
         text-decoration: none;
         position: relative;
@@ -45,7 +45,7 @@ color: white;
         /* width: 250px; */
       }  
 
-      .heroes a:hover {
+      .fruits a:hover {
         color:#607D8B;
       }
 .fruits .fix{
@@ -73,7 +73,3 @@ color: white;
     margin-left: 135px;
 }
 
-/* .heroes .text {
-    position: relative;
-    top: -3px;
-  } */

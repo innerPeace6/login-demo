@@ -12,8 +12,8 @@ import { getNumberOfCurrencyDigits } from '@angular/common';
 })
 
 export class FruitDetailComponent implements OnInit {
-
-  fruit: Fruit;
+  
+  fruits: Fruit[];
   constructor(
     private route:ActivatedRoute,
     private fruitService: FruitService
@@ -22,8 +22,14 @@ export class FruitDetailComponent implements OnInit {
   ngOnInit(): void {
     this.getFruit();
   }
+
+  // getFruit(): void{
+  
+  //  this.fruitService.getFruits().subscribe(FRUITS => this.fruits=FRUITS);
+  //  }
 getFruit(): void{
  const id = +this.route.snapshot.paramMap.get('id') 
 this.fruitService.getFruits(id).subscribe(fruit => this.fruit=fruit);
 }
+
 }
