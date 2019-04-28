@@ -8,27 +8,23 @@ import {Router} from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  isLogin: boolean = false;
-  uname: string = '';
+  isLogin: boolean = true;
+  // uname: string = '';
   username;
   password;
   constructor() { }
 
   ngOnInit() {
-    //如果result.uname中有数据，说明已登录，把用户名读取到头部，如果没有说明未登录
-    if (this.username == 'admin' && this.password == '123456') {
-      this.isLogin = true;
-      this.uname = this.username;
-    }else{this.isLogin = false;}
     
   }
 
-
   login(){
-    var username= $("#uname").val();
-    var password=document.getElementById("passw");
-    alert(username.value);
-    alert(password.value);
+    
+    //如果result.uname中有数据，说明已登录，把用户名读取到头部，如果没有说明未登录
+    if (this.username == 'admin' && this.password == '123456') {
+      this.isLogin = true;
+      // this.uname = this.username;
+    }else{this.isLogin = false;}
     
   }
 }

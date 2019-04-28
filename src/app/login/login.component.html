@@ -1,27 +1,11 @@
-<li *ngIf="!isLogin">
-<div class="login-wrapper">
-  <div class="login-content">
-    <table>
-      <tr>
-        <td>用户名: </td>
-        <td><input type="text" name="username" placeholder="name" id="uname"></td>
-      </tr>
-      <tr>
-        <td>密码: </td>
-        <td><input type="text" name="password" id="passw"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><button (click)="login(username,password)">登录</button></td>
-      </tr>
-    </table>
-  </div>
+<li *ngIf=!isLogin>
+<div>
+  <input [(ngModel)]="username" placeholder="账号" type="text">
+  <input [(ngModel)]="password" placeholder="密码" type="password">
+  <button (click)="login()"></button>
 </div>
 </li>
-
-<li *ngIf="isLogin">
-  <a routerLink ="['/detail']" >
-  </a>
-</li>
+<li *ngIf=isLogin routerLink ="['/detail/11']" routerLinkActive="active"> 
+login successfully...
 <router-outlet></router-outlet>>
-
+</li>
