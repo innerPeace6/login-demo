@@ -8,6 +8,7 @@ import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { QuickStartComponent } from './quick-start/quick-start.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LoginComponent } from './login/login.component';
     LoginComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule
