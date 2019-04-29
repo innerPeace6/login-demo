@@ -8,10 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-
   { path: 'list', component: FruitsComponent },
-   { path: 'list/detail', component: FruitDetailComponent },
+  // { path: '/detail/:id', component: FruitDetailComponent },
   { path: '', redirectTo: '/login', pathMatch: 'prefix' }
+
 ]
 
 
