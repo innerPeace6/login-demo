@@ -12,6 +12,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class FruitsComponent implements OnInit {
   fruits: Fruit[];
   selectedFruit: Fruit;
+  isLogin=localStorage.getItem('isLogin');
+  
 
   constructor(
     private fruitService: FruitService,
