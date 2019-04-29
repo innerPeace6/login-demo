@@ -1,9 +1,14 @@
 <h3>Top Fruits</h3>
 <div class="topFruits">
-<ul>
-  <li><a *ngFor="let fruit of fruits"  routerLink = "[/detail/{{fruit.id}}]">
+  <ul>
+    <li *ngFor="let fruit of fruits" (click)="onSelect(fruit)"><a routerLink="/detail/:{{fruit.id}}"> 
         <h4>{{fruit.name}}</h4>
-  </a>
-  </li>
-</ul>
-</div> 
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedFruit">
+
+  <app-fruit-detail [fruit]="selectedFruit"> </app-fruit-detail>
+</div>

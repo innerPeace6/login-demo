@@ -16,11 +16,16 @@
     box-sizing: border-box;
   }
   h3 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
+    color: #888888;
+    padding-left: 90px;
+    font-size: 20px ;
+   
   }
   h4 {
     position: relative;
+    color: #888888;
   }
   .grid {
     margin: 0;
@@ -63,4 +68,8 @@
   }
   ul{
     list-style: none;
+    padding-left: 145px;
+    margin-top: 36px;
+    margin-left: 40px;
+    text-align: left;
   }
