@@ -1,7 +1,7 @@
 import { FruitService } from './../fruit.service';
 import { Fruit } from '../fruit';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-fruits',
@@ -15,13 +15,15 @@ export class FruitsComponent implements OnInit {
 
   constructor(
     private fruitService: FruitService,
-    private router: Router
+    private router: Router,
+    public activatedRoute: ActivatedRoute,
   ) {
 
   }
 
   ngOnInit() {
     this.getFruits();
+    this.activatedRoute.params.subscribe(params => {console.log(params.id+'activatedRoute')});
   }
   onSelect(fruit: Fruit): void {
     this.selectedFruit = fruit;
