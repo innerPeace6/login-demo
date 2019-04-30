@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       this.isLogin = true;
       this.router.navigateByUrl("/list");
       
-      localStorage.setItem('isLogin', 'true');
+      sessionStorage.setItem('isLogin', 'true');
     }else{alert("账号或密码错误，请重新输入")};
   }
  

@@ -12,7 +12,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class FruitsComponent implements OnInit {
   fruits: Fruit[];
   selectedFruit: Fruit;
-  isLogin=localStorage.getItem('isLogin');
+  isLogin=sessionStorage.getItem('isLogin');
   
 
   constructor(
@@ -29,7 +29,7 @@ export class FruitsComponent implements OnInit {
   }
   onSelect(fruit: Fruit): void {
     this.selectedFruit = fruit;
-    this.router.navigateByUrl('/detail/{{fruit.id}}');
+    this.router.navigateByUrl('/detail/:id');
   }
   getFruits() {
     this.fruitService.getFruits().subscribe(fruits => this.fruits = fruits);
